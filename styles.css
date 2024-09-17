@@ -1,0 +1,213 @@
+.background-image {
+    height: 3000px;
+    background-image: url("Dragon and Bunny.jpeg"); /* Path to the image file */
+    background-position: center; /* Centers the image within the element */
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    overflow-y:scroll;
+}
+
+body{
+    font-family: Sans-serif;
+}
+
+table{
+    position: relative;
+    transform: translate(-50%);
+    margin-left: 50%;
+    top: 10%;
+    font-size: 20px;
+    background-color: CornflowerBlue;
+    opacity: 80%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.label{
+    background-color: DodgerBlue;
+}
+
+tr td{
+    height: 50px;
+    width: 100px;
+}
+
+h1{
+    position: fixed;
+    background-color: LightSkyBlue;
+    top: 10%;
+    color:black;
+    width: 40%;
+    line-height: 100px;
+    align:center;
+    text-align: center;
+    margin-left: 50%;
+    Opacity: 80%;
+    transform: translate(-50%);
+    z-index: 3;
+}
+
+h2{
+    position: relative;
+    background-color: LightSkyBlue;
+    color:black;
+    width: 30%;
+    line-height: 80px;
+    align:center;
+    text-align: center;
+    margin-left: 50%;
+    Opacity: 80%;
+    transform: translate(-50%);
+    top: 200px;
+    overflow: hidden;
+    height: 80px;
+}
+
+.footer{
+    display:grid;
+    grid-template-columns:33% 34% 34%;
+    position:fixed;
+    Opacity: 80%;
+    color:black;
+    width:100%;
+    height:10%;
+    top:0%;
+    left:-5px;
+    z-index: 3;
+}
+
+.movies{
+    display:grid;
+    grid-template-columns: 33% 34% 33%;
+    position: relative;
+    transform: translate(-50%);
+    top: 200px;
+    margin-left: 50%;
+}
+
+
+
+.email{
+    position: absolute;
+    top: 380%;
+    opacity: 80%;
+    color:white;
+}
+
+input{
+    padding: 5px;
+    height:50%;
+    top:-50px;
+    width:100%;
+    font-size:20px;
+    background-color: CornflowerBlue;
+    border: none;
+}
+
+input:hover{
+    animation-name: grow;
+    animation-duration:.5s;
+    animation-fill-mode: forwards;
+}
+
+h2:hover{
+    position: relative;
+    background-color: LightSkyBlue;
+    color:black;
+    width: 30%;
+    line-height: 40px;
+    align:center;
+    text-align: center;
+    margin-left: 50%;
+    Opacity: 80%;
+    transform: translate(-75%);
+    top: 200px;
+    height: 500px;
+    overflow: hidden;
+    font-size:20px;
+    width: 25%;
+}
+
+h2:hover + img {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+
+.box{
+ margin: 10%;
+ text-align: center;
+}
+
+summary{
+    margin: 5%;
+    color: white;
+}
+
+p{
+    color: white;
+    width: 120%;
+    transform : translate(-10%);
+}
+
+img{
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+.profile{
+    opacity: 0;
+    position: relative;
+    top: -186px;
+    margin-left: 56%;
+    width: 14%;
+    height:12.3%;
+}
+
+.header:hover{
+    animation-name: expand;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
+
+.generic:hover{
+    animation-name: fix;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fix{
+    from{height:80px; font-size: 25px; line-height: 80px; width: 30%; transform: translate(-50%);}
+    to{height:260px; font-size: 20px; line-height: 40px; width 30%; transform: translate(-50%);}
+}
+
+@keyframes expand{
+    from{height:80px; font-size: 25px; line-height: 80px; width: 30%; transform: translate(-50%);}
+    to{height:370px; font-size: 20px; line-height: 40px; width 30%; transform: translate(-80%);}
+}
+
+@keyframes grow{
+    from{height:50%; font-size: 20px;}
+    to{height:100%; font-size: 30px;}
+}
+
+.title{
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide{
+    from {left: -800px; opacity: 0%;}
+    to {left: 0px; opacity: 80%;}
+}
+
+@keyframes fadeIn{
+    from{opacity:0%;}
+    to{opacity:100%;}
+}
